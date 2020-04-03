@@ -1,0 +1,168 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  background-color: rgb(230, 240, 243);
+}
+
+h1 {
+  color: #DEB887;
+  text-align: center;
+  background-color: rgb(129, 141, 143);
+}
+
+h2 {
+  color: #8B0000;
+  text-align: center;
+  background-color: #5F9EA0;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  background-color: rgb(109, 140, 241);
+}
+
+a {
+  float: left;
+  display: block;
+  color: #800000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+a:hover {
+  background-color: #D2691E;
+  color: black;
+}
+
+
+div {
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #d0f0f6;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Create three unequal columns that floats next to each other */
+column {
+  float: left;
+  padding: 50px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+column.side {
+  width: 25%;
+}
+
+/* Middle column */
+column.middle {
+  width: 25%;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  column.side, column.middle {
+    width: 100%;
+  }
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: #2F4F4F;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #492a1b;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: hsl(100, 100%, 40%);
+  border-color: #0257d5;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #cce202;
+  border-color: #0257d5;
+  box-shadow: 0 0 0 0.2rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #7fa5d6;
+  border-color: #0252c9;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(49, 132, 253, 0.5);
+}
+
+.div_img {
+  /* The image used */
+  background-image: url('pct/tech.jpg');
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shadow {
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: rgb(133, 206, 16);
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: lightskyblue;
+}
